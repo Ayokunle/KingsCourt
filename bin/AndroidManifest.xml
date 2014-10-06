@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kingscourt"
+    android:versionCode="7"
+    android:versionName="1.11.1">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	  
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rccg_logo_jpg"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		
+		<activity
+            android:name="com.kingscourt.Menu"
+            android:label="Menu" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.kingscourt.Menu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.kingscourt.About"
+            android:label="About"
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="com.kingscourt.About" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.kingscourt.Events"
+            android:label="Events" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.kingscourt.Events" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.kingscourt.Contact"
+            android:label="Contact" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.kingscourt.Contact" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.kingscourt.Times"
+            android:label="Times" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.kingscourt.Times" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.kingscourt.Pastor"
+            android:label="Pastor" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.kingscourt.Pastor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.kingscourt.Preferences"
+            android:theme="@style/PreferencesTheme"
+            android:label="Preference" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.kingscourt.Preference" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.kingscourt.Feedback"
+            android:label="Feedback" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.kingscourt.Feedback" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

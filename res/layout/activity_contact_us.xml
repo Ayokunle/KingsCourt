@@ -1,0 +1,74 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+	
+	<LinearLayout 
+	    android:id="@+id/header"
+	    android:orientation="horizontal"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+	    	
+	    	<View
+	    	    android:layout_marginTop="5dp"
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#FFFFFF"/>
+
+		<TextView
+		    android:id="@+id/textView1"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="Contacts"
+	    	android:gravity="center"
+	    	android:textColor="#ffffff"
+	    	android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	</LinearLayout>
+	
+	<ScrollView 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dp"
+    	android:orientation="vertical"
+    	android:layout_gravity="center"
+    	android:scrollbars="none">
+	    
+	    <LinearLayout
+	        android:id="@+id/events_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+			
+			<LinearLayout
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent"
+	        	android:orientation="vertical" >
+	        	
+	        	<TextView
+		            android:id="@+id/textView2"
+	            	android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+	            	android:textSize="16dp"
+	            	android:textColor="@color/white"
+	            	android:textAlignment="center"
+	            	android:text="The Redeemed Christian Church of God\nKing's Court Dublin\nUnit 2 Damastown Way\nDamastown Industrial Estate\nDamastown, Dublin 15\nIreland"/>
+	        	
+			</LinearLayout>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

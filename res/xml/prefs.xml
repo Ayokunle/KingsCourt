@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+        <PreferenceCategory android:title="Feedback">
+            <Preference 
+        	    android:title="Send feedback"
+                android:key="feedback"/>
+            
+        	<Preference 
+        	    android:title="Version Info"
+                android:key="button"/>
+        </PreferenceCategory>
+        
+</PreferenceScreen>

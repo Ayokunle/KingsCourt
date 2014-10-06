@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+	    android:id="@+id/header" 
+	    android:orientation="horizontal"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+	    	
+	    	<View
+	    	    android:layout_marginTop="5dp"
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#FFFFFF"/>
+
+		<TextView
+		    android:id="@+id/textView1"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#FFFFFF"
+	    	android:text="Feedback"
+	    	android:gravity="center"
+	    	android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	</LinearLayout>
+    
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+		
+		<EditText 
+		    android:id="@+id/user_name"
+		    android:layout_marginTop="10dp"
+		    android:layout_width="match_parent"
+	    	android:layout_height="20dp"
+	    	android:minLines="1"
+	    	android:lines="1"
+	    	android:singleLine="true"
+	    	android:background="@null"
+	    	android:textCursorDrawable ="@null"
+	    	android:textColor="@color/white"
+	    	android:hint= "Name"
+		    />
+	    
+		<EditText
+		    android:id="@+id/user_feedback"
+		    android:layout_marginTop="10dp"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="200dp"
+	    	android:gravity="top|left"
+	    	android:text=""
+	    	android:textCursorDrawable ="@null"
+	    	android:textColor="@color/white"
+	    	android:background="@null"
+	    	android:hint= "Are you having problems with this app?\nWhat functions do you think the app should have?\nPlease let us know."/>
+		
+		<Button 
+	    	android:id="@+id/send_feedback"
+	    	android:layout_width="100dp"
+	    	android:layout_height="50dp"
+	    	android:text="Send"
+	    	android:textColor="@color/white"/>
+	</LinearLayout>
+</LinearLayout>

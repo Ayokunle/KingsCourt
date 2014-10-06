@@ -1,0 +1,93 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:scrollbars="none"
+    android:screenOrientation="portrait"
+    android:orientation="vertical" >
+	
+	<LinearLayout
+	    android:id="@+id/header" 
+	    android:orientation="horizontal"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+	    	
+	    <View
+	    	android:layout_marginTop="5dp"
+    		android:layout_width="fill_parent"
+    		android:layout_height="1dip"
+    		android:background="#FFFFFF"/>
+
+		<TextView
+		    android:id="@+id/textView1"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#FFFFFF"
+	    	android:text="Pastor's Desk"
+	    	android:gravity="center"
+	    	android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	</LinearLayout>
+    
+	<ScrollView 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dp"
+    	android:orientation="vertical"
+    	android:layout_gravity="center"
+    	android:scrollbars="none">
+		
+		<LinearLayout
+		    android:orientation="vertical" 
+	    	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+		
+		    <RelativeLayout
+		        android:id="@+id/pastor_header"
+		    	android:orientation="vertical" 
+	    		android:layout_width="fill_parent"
+    			android:layout_height="wrap_content">
+	    		
+			</RelativeLayout>
+		    
+		    <TextView
+	    		android:id="@+id/update"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:text="Update"
+	    		android:textColor="#ffffff" />
+		    
+			<TextView
+	    		android:id="@+id/textView2"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:text="No SD Card."
+	    		android:textSize="25dp"
+	    		android:textAppearance="?android:attr/textAppearanceLarge"
+	    		android:textColor="#ffffff" />	    
+			
+			<TextView
+        		android:id="@+id/txtStatus"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="#ffffff"
+        		android:layout_weight="1"
+				android:textSize="20dp"
+        		android:text=""/>
+	
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

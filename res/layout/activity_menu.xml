@@ -1,0 +1,150 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:scrollbars="none"
+    android:screenOrientation="portrait"
+    android:orientation="vertical" >
+	
+	<LinearLayout 
+	    android:id="@+id/header"
+	    android:orientation="horizontal"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	
+    	
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+	    	
+	    	<View
+	    	    android:layout_marginTop="5dp"
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#ffffff"/>
+	</LinearLayout>
+		    	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="5dp"
+	    android:layout_weight=".20"
+	    android:orientation="vertical" >
+
+	    <Button
+	        android:id="@+id/pastor_button"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center"
+	        android:textColor="@color/white"
+	        android:textSize="25dp"
+	        android:background="@null"
+	        android:onClick="onPastorClick"
+	        android:text="Pastor&apos;s Desk" />
+
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginTop="5dp"
+    	android:orientation="vertical"
+    	android:layout_weight=".20"
+    	android:layout_gravity="center">
+	    	<Button 
+	    		android:id="@+id/service_button"
+        		android:layout_width="fill_parent"
+	        	android:layout_height="match_parent"
+			    android:layout_gravity="center"
+			    android:textColor="@color/white"
+			    android:text="Service Times"
+			    android:textSize="25dp"
+			    android:background="@null"
+        		android:onClick="onServiceClick"/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginTop="5dp"
+    	android:orientation="vertical"
+    	android:layout_weight=".20"
+    	android:layout_gravity="center">
+	    	<Button
+			    android:id="@+id/events_button"
+			    android:layout_width="fill_parent"
+	        	android:layout_height="match_parent"
+			    android:layout_gravity="center"
+			    android:onClick="onEventsClick"
+			    android:textColor="@color/white"
+			    android:textSize="25dp"
+			    android:background="@null"
+			    android:text="Events" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginTop="5dp"
+    	android:orientation="vertical"
+    	android:layout_weight=".20"
+    	android:layout_gravity="center">
+	    	<Button
+	    	    android:id="@+id/contact_button"
+	    	    android:layout_width="fill_parent"
+	        	android:layout_height="match_parent"
+	    	    android:layout_gravity="center"
+	    	    android:textColor="@color/white"
+	    	    android:onClick="onContactClick"
+	    	    android:textSize="25dp"
+	    	    android:background="@null"
+	    	    android:text="Contacts" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginTop="5dp"
+    	android:orientation="vertical"
+    	android:layout_weight=".20"
+    	android:layout_gravity="center">
+	    	<Button
+		    	android:id="@+id/about_button"
+        		android:layout_width="fill_parent"
+	        	android:layout_height="match_parent"
+			    android:layout_gravity="center"
+			    android:textColor="@color/white"
+			    android:text="About Us"
+			    android:background="@null"
+			    android:textSize="25dp"
+        		android:onClick="onAboutClick"/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginTop="5dp"
+    	android:orientation="vertical"
+    	android:layout_weight=".20"
+    	android:layout_gravity="center">
+	    	<Button
+		    	android:id="@+id/settings_button"
+        		android:layout_width="fill_parent"
+	        	android:layout_height="match_parent"
+			    android:layout_gravity="center"
+			    android:textColor="@color/white"
+			    android:text="Feedback"
+			    android:background="@null"
+			    android:textSize="25dp"
+        		android:onClick="onSettingsClick"/>
+	</LinearLayout>
+</LinearLayout>
